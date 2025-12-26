@@ -23,9 +23,10 @@
   // Command: bun wrangler deploy
 
   // WARNING: Route modifications must be synchronized across all environments
+  // Using custom_domain: true for automatic DNS management
   // prettier-ignore
   "routes": [
-    { "pattern": "delorean.samcarlton.com/*", "zone_name": "samcarlton.com" }
+    { "pattern": "delorean.samcarlton.com", "custom_domain": true }
   ],
   "vars": {
     "ENVIRONMENT": "production"
@@ -46,7 +47,7 @@
     "staging": {
       // prettier-ignore
       "routes": [
-        { "pattern": "staging.delorean.samcarlton.com/*", "zone_name": "samcarlton.com" }
+        { "pattern": "staging.delorean.samcarlton.com", "custom_domain": true }
       ],
       "vars": {
         "ENVIRONMENT": "staging"
@@ -58,7 +59,7 @@
     "preview": {
       // prettier-ignore
       "routes": [
-        { "pattern": "preview.delorean.samcarlton.com/*", "zone_name": "samcarlton.com" }
+        { "pattern": "preview.delorean.samcarlton.com", "custom_domain": true }
       ],
       "vars": {
         "ENVIRONMENT": "preview"
