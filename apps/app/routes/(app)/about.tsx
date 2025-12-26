@@ -9,6 +9,8 @@ import {
 } from "@repo/ui";
 import { createFileRoute } from "@tanstack/react-router";
 
+import { APP_NAME } from "@repo/core/config";
+
 export const Route = createFileRoute("/(app)/about")({
   component: About,
 });
@@ -19,7 +21,7 @@ function About() {
       {/* Hero Section */}
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold tracking-tight mb-6">
-          About React Starter Kit
+          About {APP_NAME}
         </h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           A production-ready, full-stack web application template that combines
@@ -39,10 +41,9 @@ function About() {
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-muted-foreground">
-              React Starter Kit was created to bridge the gap between prototype
-              and production. We believe that developers should focus on
-              building great features, not wrestling with configuration and
-              setup.
+              {APP_NAME} was created to bridge the gap between prototype and
+              production. We believe that developers should focus on building
+              great features, not wrestling with configuration and setup.
             </p>
             <p className="text-muted-foreground">
               Our template provides a solid foundation with best practices,
@@ -203,7 +204,7 @@ function About() {
         <Card>
           <CardContent className="pt-6 text-center">
             <p className="text-muted-foreground mb-6">
-              React Starter Kit is maintained by Kriasoft, a team of experienced
+              {APP_NAME} is maintained by Kriasoft, a team of experienced
               developers passionate about modern web technologies and developer
               experience.
             </p>
@@ -240,8 +241,8 @@ function About() {
           Ready to Get Started?
         </h2>
         <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-          Join thousands of developers who have chosen React Starter Kit for
-          their next project.
+          Join thousands of developers who have chosen {APP_NAME} for their next
+          project.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

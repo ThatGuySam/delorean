@@ -4,6 +4,8 @@ import { fileURLToPath } from "bun";
 import { execa } from "execa";
 import { z } from "zod";
 
+import { APP_NAME } from "@repo/core/config";
+
 const rootDir = fileURLToPath(new URL("..", import.meta.url));
 const $ = execa({ cwd: rootDir });
 
@@ -14,7 +16,7 @@ const $ = execa({ cwd: rootDir });
  * @see https://code.visualstudio.com/docs/copilot/chat/mcp-servers
  */
 const server = new McpServer({
-  name: "React Starter Kit",
+  name: APP_NAME,
   version: "0.0.0",
 });
 

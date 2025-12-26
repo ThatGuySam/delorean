@@ -3,7 +3,7 @@
 
   // [METADATA]
   // Application identity and Cloudflare runtime compatibility settings.
-  "name": "example-api",
+  "name": "delorean-api",
   "main": "./worker.ts",
   "compatibility_date": "2025-08-15",
   "compatibility_flags": ["nodejs_compat"],
@@ -22,13 +22,13 @@
   // NOTE: These routes allow other workers to handle non-api paths (e.g., marketing site)
   // prettier-ignore
   "routes": [
-    { "pattern": "example.com/api*", "zone_name": "example.com" }
+    { "pattern": "delorean.com/api*", "zone_name": "delorean.com" }
   ],
   "vars": {
     "ENVIRONMENT": "production",
-    "APP_NAME": "Example",
-    "APP_ORIGIN": "https://example.com",
-    "ALLOWED_ORIGINS": "https://example.com",
+    "APP_NAME": "Codename Delorean",
+    "APP_ORIGIN": "https://delorean.com",
+    "ALLOWED_ORIGINS": "https://delorean.com",
     "RESEND_EMAIL_FROM": "onboarding@resend.dev"
   },
   // prettier-ignore
@@ -44,7 +44,7 @@
     "dev": {
       "vars": {
         "ENVIRONMENT": "development",
-        "APP_NAME": "Example",
+        "APP_NAME": "Codename Delorean",
         "APP_ORIGIN": "http://localhost:5173",
         "ALLOWED_ORIGINS": "http://localhost:5173,http://127.0.0.1:5173",
         "RESEND_EMAIL_FROM": "onboarding@resend.dev"
@@ -67,9 +67,9 @@
       ],
       "vars": {
         "ENVIRONMENT": "staging",
-        "APP_NAME": "Example",
         "APP_ORIGIN": "https://staging.example.com",
         "ALLOWED_ORIGINS": "https://staging.example.com",
+        "APP_NAME": "Codename Delorean",
         "RESEND_EMAIL_FROM": "onboarding@resend.dev"
       },
       // prettier-ignore
@@ -89,9 +89,9 @@
       ],
       "vars": {
         "ENVIRONMENT": "preview",
-        "APP_NAME": "Example",
         "APP_ORIGIN": "https://preview.example.com",
         "ALLOWED_ORIGINS": "https://preview.example.com",
+        "APP_NAME": "Codename Delorean",
         "RESEND_EMAIL_FROM": "onboarding@resend.dev"
       },
       // prettier-ignore

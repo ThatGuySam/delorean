@@ -1,6 +1,6 @@
 # Getting Started
 
-Welcome to **React Starter Kit** — your shortcut to building modern web apps without the usual setup headaches. This guide will get you from zero to hero faster than you can say "webpack configuration" (which, thankfully, you won't have to).
+Welcome to **Codename Delorean** — your shortcut to building modern web apps without the usual setup headaches. This guide will get you from zero to hero faster than you can say "webpack configuration" (which, thankfully, you won't have to).
 
 ::: tip Quick Start
 Just want to dive in? Run these commands and you're good to go:
@@ -208,7 +208,7 @@ GOOGLE_CLIENT_SECRET="your-google-client-secret"
 
 # Email Service (Resend)
 RESEND_API_KEY="re_xxxxxxxxxx"
-RESEND_EMAIL_FROM="Your App <noreply@example.com>"
+RESEND_EMAIL_FROM="Codename Delorean <noreply@delorean.com>"
 
 # Auth Secret (generate with: openssl rand -hex 32)
 BETTER_AUTH_SECRET="your-random-secret-here"

@@ -1,5 +1,8 @@
 import { getAuthTables } from "better-auth/db";
 import type { BetterAuthOptions } from "better-auth/types";
+
+import { APP_NAME } from "@repo/core/config";
+
 import { createAuth } from "../../apps/api/lib/auth";
 import { env } from "../../apps/api/lib/env";
 
@@ -13,11 +16,13 @@ async function generateAuthSchema() {
 
   // Create the auth instance to get the configuration
   const auth = createAuth(mockDb, {
-    APP_NAME: env.APP_NAME || "React Starter Kit",
+    APP_NAME: env.APP_NAME || APP_NAME,
     APP_ORIGIN: env.APP_ORIGIN || "http://localhost:3000",
     BETTER_AUTH_SECRET: env.BETTER_AUTH_SECRET || "mock-secret",
     GOOGLE_CLIENT_ID: env.GOOGLE_CLIENT_ID || "mock-client-id",
     GOOGLE_CLIENT_SECRET: env.GOOGLE_CLIENT_SECRET || "mock-client-secret",
+    RESEND_API_KEY: "",
+    RESEND_EMAIL_FROM: "noreply@example.com",
   });
 
   // WARNING: Type assertion needed as Better Auth doesn't export the auth instance type

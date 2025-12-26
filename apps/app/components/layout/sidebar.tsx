@@ -1,4 +1,7 @@
 import { UserMenu } from "@/components/user-menu";
+
+import { APP_NAME_SHORT } from "@repo/core/config";
+
 import { sidebarItems } from "./constants";
 import { SidebarNav } from "./sidebar-nav";
 
@@ -15,7 +18,7 @@ export function Sidebar({ isOpen }: SidebarProps) {
     >
       <div className="h-full flex flex-col">
         <div className="h-14 flex items-center px-4 border-b">
-          <h2 className="font-semibold text-lg">Console</h2>
+          <h2 className="font-semibold text-lg">{APP_NAME_SHORT}</h2>
         </div>
         <SidebarNav items={sidebarItems} />
         <UserMenu />

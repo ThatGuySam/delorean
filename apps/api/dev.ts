@@ -7,6 +7,9 @@
 import { Hono } from "hono";
 import { parseArgs } from "node:util";
 import { getPlatformProxy } from "wrangler";
+
+import { APP_NAME } from "@repo/core/config";
+
 import api from "./index.js";
 import { createAuth } from "./lib/auth.js";
 import type { AppContext } from "./lib/context.js";
@@ -56,7 +59,7 @@ app.use("*", async (c, next) => {
     ...Object.fromEntries(
       secretKeys.map((key) => [key, (process.env[key] || cf.env[key]) ?? ""]),
     ),
-    APP_NAME: process.env.APP_NAME || cf.env.APP_NAME || "Example",
+    APP_NAME: process.env.APP_NAME || cf.env.APP_NAME || APP_NAME,
     APP_ORIGIN:
       c.req.header("x-forwarded-origin") ||
       process.env.APP_ORIGIN ||

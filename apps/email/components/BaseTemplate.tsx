@@ -12,6 +12,8 @@ import {
 } from "@react-email/components";
 import type { ReactNode } from "react";
 
+import { APP_DEV_ORIGIN, APP_NAME } from "@repo/core/config";
+
 interface BaseTemplateProps {
   preview: string;
   children: ReactNode;
@@ -36,8 +38,8 @@ const colors = {
 export function BaseTemplate({
   preview,
   children,
-  appName = "React Starter Kit",
-  appUrl = "https://example.com",
+  appName = APP_NAME,
+  appUrl = APP_DEV_ORIGIN,
 }: BaseTemplateProps) {
   // Embedded SVG logo as data URI for better email compatibility
   const logoDataUri =

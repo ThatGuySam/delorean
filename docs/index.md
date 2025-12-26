@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "React Starter Kit"
+  name: "Codename Delorean"
   # text: "Production-ready monorepo for building fast web apps"
-  tagline: Skip months of setup and ship your AI-powered SaaS fast. Authentication, database migrations, edge deployment, and cutting-edge React patterns all configured with industry best practices.
+  tagline: Modern full-stack SaaS foundation. Authentication, database migrations, edge deployment, and cutting-edge React patterns all configured with industry best practices.
   actions:
     - theme: brand
       text: Getting Started

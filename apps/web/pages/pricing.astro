@@ -1,9 +1,10 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { Button, Card, CardContent, CardDescription, CardHeader, CardTitle } from '@repo/ui';
+import { APP_NAME } from '@repo/core/config';
 
-const title = "Pricing - React Starter Kit";
-const description = "React Starter Kit is free and open source. Choose the support level that's right for your team.";
+const title = `Pricing - ${APP_NAME}`;
+const description = `${APP_NAME} is free and open source. Choose the support level that's right for your team.`;
 
 const plans = [
   {
@@ -38,7 +39,7 @@ const plans = [
       "Custom deployment help"
     ],
     cta: "Contact Sales",
-    href: "mailto:hello@kriasoft.com?subject=React Starter Kit Professional",
+    href: "mailto:hello@kriasoft.com?subject=Codename Delorean Professional",
     variant: "default" as const
   },
   {
@@ -55,7 +56,7 @@ const plans = [
       "White-label options"
     ],
     cta: "Contact Us",
-    href: "mailto:hello@kriasoft.com?subject=React Starter Kit Enterprise",
+    href: "mailto:hello@kriasoft.com?subject=Codename Delorean Enterprise",
     variant: "outline" as const
   }
 ];
@@ -69,7 +70,7 @@ const plans = [
         Simple, Transparent Pricing
       </h1>
       <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
-        React Starter Kit is free and open source. Choose additional support
+        Codename Delorean is free and open source. Choose additional support
         options based on your team's needs.
       </p>
     </div>
@@ -142,11 +143,11 @@ const plans = [
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
         <Card client:visible>
           <CardHeader>
-            <CardTitle className="text-lg">Is React Starter Kit really free?</CardTitle>
+            <CardTitle className="text-lg">Is Codename Delorean really free?</CardTitle>
           </CardHeader>
           <CardContent>
             <p class="text-sm text-muted-foreground">
-              Yes! React Starter Kit is completely free and open source under the MIT license.
+              Yes! Codename Delorean is completely free and open source under the MIT license.
               You can use it for personal or commercial projects without any restrictions.
             </p>
           </CardContent>

@@ -3,7 +3,7 @@
 
   // [METADATA]
   // Application identity and Cloudflare runtime compatibility settings.
-  "name": "example-app",
+  "name": "delorean-app",
   "compatibility_date": "2025-08-15",
   "compatibility_flags": [],
   "workers_dev": false,

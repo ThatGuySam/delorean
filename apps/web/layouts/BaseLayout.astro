@@ -1,5 +1,6 @@
 ---
 import '@/styles/globals.css';
+import { APP_NAME, APP_DESCRIPTION } from '@repo/core/config';
 
 export interface Props {
   title?: string;
@@ -8,8 +9,8 @@ export interface Props {
 }
 
 const { 
-  title = 'React Starter Kit - Modern Full-Stack Web Application', 
-  description = 'Modern full-stack web application template optimized for serverless deployment to CDN edge locations. Built with React, TypeScript, and the latest web technologies.',
+  title = `${APP_NAME} - Modern Full-Stack Web Application`, 
+  description = APP_DESCRIPTION,
   image = '/og-image.png'
 } = Astro.props;
 ---
@@ -49,7 +50,7 @@ const {
           <div class="flex h-16 items-center justify-between">
             <div class="flex items-center space-x-4">
               <a href="/" class="text-xl font-bold text-primary">
-                React Starter Kit
+                {APP_NAME}
               </a>
             </div>
             <nav class="hidden md:flex items-center space-x-6">
@@ -96,10 +97,9 @@ const {
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div class="space-y-3">
-              <h3 class="font-semibold">React Starter Kit</h3>
+              <h3 class="font-semibold">{APP_NAME}</h3>
               <p class="text-sm text-muted-foreground">
-                Modern full-stack web application template optimized for
-                serverless deployment.
+                {APP_DESCRIPTION}
               </p>
             </div>
             <div class="space-y-3">

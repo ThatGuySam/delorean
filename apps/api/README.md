@@ -1,6 +1,6 @@
 # API Layer
 
-You've reached the API layer, the backend core of the React Starter Kit. This is where we leverage tRPC for end-to-end type safety, connecting your React frontend to a high-performance tRPC API server. The architecture is designed for building robust, maintainable, and scalable APIs from day one.
+You've reached the API layer, the backend core of the Codename Delorean. This is where we leverage tRPC for end-to-end type safety, connecting your React frontend to a high-performance tRPC API server. The architecture is designed for building robust, maintainable, and scalable APIs from day one.
 
 ## Architecture Overview
 

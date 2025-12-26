@@ -1,3 +1,5 @@
+import { APP_DEV_ORIGIN, APP_NAME } from "@repo/core/config";
+
 import { OTPEmail } from "../templates/otp-email";
 
 export default function OTPVerificationPreview() {
@@ -5,8 +7,8 @@ export default function OTPVerificationPreview() {
     <OTPEmail
       otp="789012"
       type="email-verification"
-      appName="React Starter Kit"
-      appUrl="https://example.com"
+      appName={APP_NAME}
+      appUrl={APP_DEV_ORIGIN}
     />
   );
 }

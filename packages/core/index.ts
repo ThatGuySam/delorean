@@ -1,7 +1,17 @@
 /**
  * @file Core package entrypoint.
  *
- * Placeholder for shared utilities and WebSocket functionality.
+ * Exports shared utilities, configuration, and types
+ * used across the monorepo.
  */
 
-export default {};
+export {
+  APP_NAME,
+  APP_NAME_SHORT,
+  APP_SLUG,
+  APP_DESCRIPTION,
+  APP_DEV_ORIGIN,
+  APP_EXAMPLE_DOMAIN,
+  appConfig,
+  type AppConfig,
+} from "./config";
