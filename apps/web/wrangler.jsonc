@@ -25,7 +25,7 @@
   // WARNING: Route modifications must be synchronized across all environments
   // prettier-ignore
   "routes": [
-    { "pattern": "example.com/*", "zone_name": "example.com" }
+    { "pattern": "delorean.samcarlton.com/*", "zone_name": "samcarlton.com" }
   ],
   "vars": {
     "ENVIRONMENT": "production"
@@ -46,7 +46,7 @@
     "staging": {
       // prettier-ignore
       "routes": [
-        { "pattern": "staging.example.com/*", "zone_name": "example.com" }
+        { "pattern": "staging.delorean.samcarlton.com/*", "zone_name": "samcarlton.com" }
       ],
       "vars": {
         "ENVIRONMENT": "staging"
@@ -58,7 +58,7 @@
     "preview": {
       // prettier-ignore
       "routes": [
-        { "pattern": "preview.example.com/*", "zone_name": "example.com" }
+        { "pattern": "preview.delorean.samcarlton.com/*", "zone_name": "samcarlton.com" }
       ],
       "vars": {
         "ENVIRONMENT": "preview"
