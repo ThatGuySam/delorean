@@ -1,0 +1,88 @@
+{
+  "11434": [
+    {
+      "name": "Ollama",
+      "info": "Default REST API base for Ollama"
+    }
+  ],
+  "1234": [
+    {
+      "name": "LM Studio",
+      "info": "OpenAI-compatible local server"
+    }
+  ],
+  "1337": [
+    {
+      "name": "Jan",
+      "info": "Local API Server (OpenAI-compatible)"
+    }
+  ],
+  "3000": [
+    {
+      "name": "Flowise",
+      "info": "Web UI/flow editor"
+    },
+    {
+      "name": "Open WebUI (host mapping)",
+      "info": "Common Docker mapping (container 8080 → host 3000)"
+    }
+  ],
+  "3001": [
+    {
+      "name": "AnythingLLM",
+      "info": "Docker-based UI"
+    }
+  ],
+  "3080": [
+    {
+      "name": "LibreChat",
+      "info": "Local chat UI"
+    }
+  ],
+  "4000": [
+    {
+      "name": "LiteLLM Proxy",
+      "info": "Local proxy/gateway"
+    }
+  ],
+  "5001": [
+    {
+      "name": "KoboldCpp",
+      "info": "Local UI/API (OpenAI-compatible routes)"
+    }
+  ],
+  "7860": [
+    {
+      "name": "Langflow",
+      "info": "Node-based UI with API endpoints"
+    },
+    {
+      "name": "text-generation-webui (oobabooga)",
+      "info": "Web UI for local models"
+    }
+  ],
+  "8000": [
+    {
+      "name": "vLLM (OpenAI-compatible)",
+      "info": "Local LL model serving"
+    },
+    {
+      "name": "SillyTavern",
+      "info": "Local AI chat UI"
+    }
+  ],
+  "8080": [
+    {
+      "name": "llama.cpp server",
+      "info": "Local OpenAI-compatible server"
+    },
+    {
+      "name": "LocalAI",
+      "info": "Local inference API/UI"
+    },
+    {
+      "name": "Open WebUI (container default)",
+      "info": "Often mapped to a different host port"
+    }
+  ]
+}
