@@ -16,6 +16,7 @@
   "scripts": {
     "dev": "bun --filter @repo/web --filter @repo/api --filter @repo/app dev",
     "lint": "eslint --cache --report-unused-disable-directives .",
+    "lint:fix": "bunx prettier --write .",
     "test": "vitest",
     "typecheck": "tsc --build",
     "build:types": "tsc --build",
