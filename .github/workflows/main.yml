@@ -21,7 +21,7 @@ on:
         required: true
 
 env:
-  BUN_VERSION: latest
+  BUN_VERSION: "1.4.4"
   VERSION: ${{ github.event.pull_request.number }}
   HUSKY: 0
 

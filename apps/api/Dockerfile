@@ -3,7 +3,7 @@
 # https://bun.com/guides/ecosystem/docker
 # https://docs.docker.com/guides/bun/containerize/
 
-FROM oven/bun:slim
+FROM oven/bun:1.4.4
 
 # Install dumb-init and jq for proper signal handling and JSON processing
 RUN apt-get update && apt-get install -y --no-install-recommends dumb-init jq && \
